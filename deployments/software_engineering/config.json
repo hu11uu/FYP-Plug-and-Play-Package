@@ -1,0 +1,8 @@
+{
+  "conversation_title": "Software engineering practice",
+  "chatbot_context": "SE-DEMO: introductory software engineering (SDLC, testing, design patterns, Scrum)",
+  "display_name": "software engineering",
+  "brand": "SE",
+  "sample_questions": ["What are the levels of software testing?", "Explain the waterfall model", "What are the Scrum roles?"],
+  "placeholder_hint": "E.g. What's the difference between top-down and bottom-up integration testing?"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "marketing-mix",
+    "title": "The marketing mix (4Ps)",
+    "keywords": ["marketing mix", "4ps", "four ps", "product", "price", "place"],
+    "content": "The marketing mix is the set of four controllable decisions a company makes to take an offering to market, known as the 4Ps. Product covers what is actually being sold -- the good, service, or experience, including its features, quality, and packaging. Price covers what customers pay for it, set with reference to production cost, competitor pricing, and perceived value, and can include discounts or payment terms. Place (distribution) covers how and where the product reaches the customer, spanning physical stores, online channels, and the logistics connecting a company to its market. Promotion covers how the company communicates the offering's value to customers, combining advertising, public relations, sales promotions, and personal selling. The four elements are designed to work together, not independently: a premium Product typically needs a matching Price and Promotion strategy, or the positioning becomes inconsistent."
+  },
+  {
+    "id": "stp",
+    "title": "Segmentation, targeting, and positioning (STP)",
+    "keywords": ["stp", "segmentation", "targeting", "positioning", "target market", "market segment"],
+    "content": "STP is a three-step process for deciding who to sell to and how to be perceived. Segmentation divides a broad market into smaller groups of customers who share similar needs or characteristics, commonly split along demographic (age, income), geographic, psychographic (lifestyle, values), or behavioural (usage, loyalty) lines. Targeting evaluates each resulting segment for its size, growth, and fit with the company's resources, then chooses which segment or segments to actually pursue -- a company can target broadly across most segments, focus narrowly on one, or serve several with tailored offerings. Positioning is the last step: deciding how the product should be perceived in the target customer's mind relative to competing alternatives, usually expressed through a specific combination of benefits, price point, and brand image that the rest of the marketing mix is then built to support."
+  },
+  {
+    "id": "consumer-decision-process",
+    "title": "The consumer decision-making process",
+    "keywords": ["consumer decision", "buyer decision process", "problem recognition", "information search", "evaluation of alternatives", "purchase decision", "post-purchase"],
+    "content": "The consumer decision-making process describes the five stages a buyer moves through before and after a purchase. Problem recognition is the trigger: the buyer notices a gap between their current state and a desired one. Information search follows, where the buyer gathers options from personal sources (friends, family), commercial sources (advertising, salespeople), or public sources (reviews, comparison sites). Evaluation of alternatives is where the buyer compares the options found against criteria that matter to them, such as price, quality, or brand reputation. Purchase decision is the actual choice and transaction, which can still be disrupted at the last moment by factors like a trusted person's negative opinion or an unexpected change in circumstances. Post-purchase behaviour covers what happens afterward -- whether the buyer is satisfied or experiences regret (cognitive dissonance), which shapes repeat purchases and word-of-mouth."
+  },
+  {
+    "id": "branding",
+    "title": "Branding and brand equity",
+    "keywords": ["branding", "brand equity", "brand identity", "brand awareness", "brand loyalty", "brand image"],
+    "content": "A brand is the set of associations -- a name, symbol, design, and reputation -- that identifies a company's offering and distinguishes it from competitors. Brand identity is what the company deliberately creates and controls: its name, logo, colours, tone of voice, and the values it wants to be known for. Brand image is different -- it is how customers actually perceive the brand in practice, which does not always match the intended identity. Brand equity is the commercial value that a strong, recognised brand adds beyond the product's functional benefits: it typically rests on brand awareness (whether customers recognise the brand at all), perceived quality, brand associations, and brand loyalty (repeat purchasing and resistance to switching). High brand equity lets a company charge a premium price, launch new products more easily, and withstand competitive or reputational pressure better than a lesser-known competitor could."
+  },
+  {
+    "id": "swot-analysis",
+    "title": "SWOT analysis in marketing planning",
+    "keywords": ["swot", "swot analysis", "strengths", "weaknesses", "opportunities", "threats"],
+    "content": "A SWOT analysis is a planning tool used to assess a company's position before setting marketing strategy, organised into a two-by-two grid of internal and external factors. Strengths and Weaknesses are internal: things the company itself controls, such as a strong distribution network (a strength) or an outdated product line (a weakness). Opportunities and Threats are external: things happening in the market that the company does not control, such as a rising trend in customer demand (an opportunity) or a new competitor entering the market (a threat). The point of separating internal from external is strategic -- a company can act directly to fix a weakness or build on a strength, but it can only react to opportunities and threats, for example by moving quickly to capture a trend before a competitor does, or building a defence against a threat before it materialises."
+  },
+  {
+    "id": "promotion-mix",
+    "title": "The promotion mix (integrated marketing communications)",
+    "keywords": ["promotion mix", "integrated marketing communications", "imc", "advertising", "public relations", "sales promotion", "personal selling", "direct marketing"],
+    "content": "The promotion mix is the specific combination of communication tools a company uses to inform, persuade, and remind customers about its offering, and integrated marketing communications (IMC) is the practice of coordinating all of them into one consistent message. Advertising is paid, non-personal communication through media like TV, search ads, or social platforms, reaching a broad audience at a fixed cost. Public relations builds goodwill and manages reputation through channels the company does not pay for directly, such as press coverage or sponsored events, and is generally seen as more credible than advertising but harder to control. Sales promotion uses short-term incentives -- coupons, discounts, contests -- to prompt an immediate purchase rather than build long-term brand preference. Personal selling is direct, one-to-one interaction between a company representative and a prospective buyer, most valuable for complex or high-value purchases. Direct marketing communicates straight to individual customers -- through email, mail, or targeted messaging -- without a mass-media intermediary."
+  }
+]

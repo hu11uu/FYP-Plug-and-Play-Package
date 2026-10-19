@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title id="page-title">TA / Study & feedback lab</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><a class="brand" href="/" id="brand"><span id="brand-text">TA</span><span> / </span>LAB</a><span class="header-note">An isolated FYP integration prototype</span><button id="new-session" class="secondary">New session</button></header>
+<main>
+<section class="intro"><div><p class="eyebrow">SAME ALGORITHM · DIFFERENT SUBJECT</p><h1 id="heading">Make sense of this topic.</h1><p class="subtitle">Explore the course material, then share feedback when the original survey algorithm prompts you.</p></div><span class="version">Frozen source<br><strong>FYP-project 3.zip</strong></span></section>
+<div class="workspace">
+<section class="chat-panel" id="chat-panel" aria-label="Chatbot"><div class="panel-heading"><h2>Study conversation</h2><span id="turns">0 messages</span></div>
+<div id="mode" class="notice">Loading the local host…</div>
+<div id="messages" aria-live="polite"><div class="welcome"><h3>A new subject. A familiar algorithm.</h3><p>Try comparing two concepts or asking for a worked example.</p></div></div>
+<div id="suggestions" class="chips"></div><div id="scenarios"></div>
+<form id="survey" hidden><h3>A moment for feedback</h3><p>Rate each statement: 1 = strongly disagree, 5 = strongly agree.</p><div id="survey-items"></div><button type="submit">Save feedback</button></form>
+<div id="status" role="status" aria-live="polite"></div>
+<form id="chat-form"><label class="sr-only" for="question">Your question</label><textarea id="question" rows="2" maxlength="4000" placeholder="Ask a question about this topic..." required></textarea><button id="send" type="submit">Send ↗</button></form>
+<p class="footer-note">Synthetic course material. No real student or university records.</p></section>
+<aside><section class="side-card"><p class="eyebrow" id="course-eyebrow">COURSE PACK</p><h2>Six starting points</h2><div id="course"></div></section>
+<section class="side-card"><p class="eyebrow">OBSERVE THE INTEGRATION</p><div class="metric"><strong id="completed">0 / 2</strong><span>surveys completed this session</span></div><p class="small">Prompts, thresholds and survey selection remain in the original files. Changing the subject does not fix existing algorithm limitations.</p><details><summary>Survey decision trace</summary><pre id="trace">No decisions yet.</pre></details><button id="export" class="secondary">Export this test conversation</button></section></aside>
+</div></main><footer>Research prototype · Feedback stays in the local SQLite database · Conversations remain in memory until the server stops</footer>
+</body></html>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "sdlc-phases",
+    "title": "SDLC phases",
+    "keywords": ["sdlc", "software development life cycle", "phases", "plan", "design", "implement", "deploy", "maintain", "requirements"],
+    "content": "The software development life cycle (SDLC) is the standard sequence a team moves through to build and run software: Plan (gather requirements, estimate cost and schedule), Design (turn requirements into an architecture and technology choices), Implement (write the code, usually broken into smaller tasks), Test (verify the software is correct and meets requirements, combining automated and manual checks), Deploy (release the build into the production environment customers use), and Maintain (fix bugs, handle customer issues, and monitor performance after release). These phases exist in every SDLC model; what differs between models is how the phases are ordered and repeated, not whether they happen."
+  },
+  {
+    "id": "sdlc-models",
+    "title": "SDLC models: Waterfall, Iterative, Spiral, Agile",
+    "keywords": ["waterfall", "agile", "iterative", "spiral", "sdlc model", "sdlc methodology"],
+    "content": "Waterfall arranges the SDLC phases strictly in sequence: each phase must finish before the next starts, so it suits projects with stable, well-understood requirements but adapts poorly to changing ones. Iterative development starts with a limited version of the requirements and repeatedly cycles through design-implement-test, gradually enhancing the product toward a production-ready release. Spiral combines that iterative repetition with an explicit linear flow and emphasizes risk analysis plus prototyping at every pass. Agile organizes work into short, repeated development cycles (sprints), delivering incremental, working pieces of the product while continuously re-checking and adjusting requirements and plans rather than fixing them all upfront."
+  },
+  {
+    "id": "testing-levels",
+    "title": "Software testing levels: unit, integration, system, acceptance",
+    "keywords": ["testing levels", "unit test", "integration test", "system test", "acceptance test", "qa", "quality assurance"],
+    "content": "Software testing is layered into four levels that run roughly in order. Unit testing checks an individual function, method, or class in isolation, and is normally written by the developer who wrote the code. Integration testing checks that separately-built modules communicate correctly once combined, and is normally run by QA/testers, since interface and data-exchange defects only appear once pieces are wired together. System testing exercises the complete, assembled application end to end in a production-like environment, checking both functional behavior and non-functional properties like performance. Acceptance testing validates the finished software against business and user requirements, and is normally performed by customers or end users, deciding whether the product is ready to ship."
+  },
+  {
+    "id": "integration-testing-approaches",
+    "title": "Integration testing approaches",
+    "keywords": ["integration testing", "big bang", "top-down", "bottom-up", "sandwich", "hybrid", "stub", "driver"],
+    "content": "There are four common strategies for combining and testing modules together. Big-bang integration waits until every module is finished, then combines and tests them all at once; this is simple to set up but makes it hard to isolate whether a failure came from an interface or from an individual module. Top-down integration tests from the higher-level modules downward, using temporary stand-ins called stubs to simulate lower modules that are not built yet. Bottom-up integration works the other way, testing the lowest-level modules first and using temporary calling programs called drivers to simulate the not-yet-built higher-level modules that would normally call them. Hybrid (sandwich) integration runs top-down and bottom-up at the same time, using both stubs and drivers so the middle layer of the system can be tested while the top and bottom layers are still being built out in parallel."
+  },
+  {
+    "id": "design-patterns",
+    "title": "GoF design pattern categories",
+    "keywords": ["design pattern", "design patterns", "gof", "gang of four", "creational", "structural", "behavioral", "singleton", "factory", "observer", "strategy"],
+    "content": "The Gang of Four (GoF) design patterns are grouped into three categories by what problem they solve. Creational patterns deal with object creation, hiding how an object is constructed from the code that uses it -- examples include Singleton, Factory Method, Abstract Factory, Builder, and Prototype. Structural patterns deal with how classes and objects are composed into larger structures, showing how separately-designed pieces fit together -- examples include Adapter, Decorator, Facade, Composite, and Proxy. Behavioral patterns deal with how objects interact, communicate, and share responsibility for a task -- examples include Observer, Strategy, Command, State, and Iterator. A pattern is a reusable solution shape, not a specific piece of code: the same pattern can be implemented differently in different languages or codebases."
+  },
+  {
+    "id": "scrum",
+    "title": "Scrum roles and events",
+    "keywords": ["scrum", "agile", "product owner", "scrum master", "development team", "sprint", "sprint planning", "daily scrum", "stand-up", "sprint review", "sprint retrospective"],
+    "content": "Scrum defines three roles. The Product Owner prioritizes and manages the product backlog and represents stakeholder needs to the team. The Scrum Master facilitates the team's events, removes obstacles blocking their work, and coaches the team on the Scrum process, without directing the technical work itself. The Development Team (the developers) does the actual design, build, and testing work, and is self-organizing in how it turns backlog items into a working increment. Scrum also defines four recurring events per sprint: Sprint Planning, where the team decides what work to take on and sets the sprint goal; the Daily Scrum (stand-up), a short daily sync where the team surfaces progress and blockers; the Sprint Review, where the team demonstrates the completed work to stakeholders and gathers feedback; and the Sprint Retrospective, where the team reflects on what went well and what to improve for the next sprint."
+  }
+]

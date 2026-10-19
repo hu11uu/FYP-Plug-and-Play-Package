@@ -1,0 +1,23 @@
+{
+  "files": {
+    "FYP-project/app.py": "37cee82b231e77e0f328c129f7488f7e504a5d70cd5001fc6faceae915b0c576",
+    "FYP-project/helper/conversation_display.py": "01a70c7455b4a11a4117d0022295f93771d689908192019ba99e58ede8f4b744",
+    "FYP-project/helper/init.py": "8cefa33b7e45853ac55a7018f39a92869e895fa94704c806235f62fb3ed5a3a4",
+    "FYP-project/helper/llm_parallel.py": "cd5c7a010cb5fb84b6098be5310c68cb61a36be436155e16ce7badf6277ec4c8",
+    "FYP-project/helper/response.py": "4dc84c49e7946ffa4cce26e3c4a4ed51a8f801958c0ac4cb83e1621304018e9a",
+    "FYP-project/helper/signals.py": "aa09c75da80ccdd4f6fdff68320efb9a96eabd3dbbb9e2c59030273b4a813e27",
+    "FYP-project/helper/survey.py": "4f3bda2c57b133f5f33f794828568ae7a4dbf8f0e41cc00f55049e77fd22591c",
+    "FYP-project/helper/survey_creation.py": "d2957b3b1bedbd9c5ad75067b81696b525fb25c4a3c82c3ec6e6b5512e2122d6",
+    "FYP-project/helper/survey_gen.py": "2c2d666cabea8924bd3347c01db91d2720c9ed496ba36a17d5a30861de71fecd",
+    "FYP-project/helper/survey_generation_llm.py": "eda04ed47e0d8ac74bd206a3d2647360cc58bc1b8d9aaf6691f3fa63f4cb4561",
+    "FYP-project/helper/upload_page_processing.py": "6fd494c0a8d97342dafe3aab77a34c36c25f02097287b214a2cff8647dcec71c",
+    "FYP-project/pages/context_uploader_page.py": "05c94b24bcc2ae1bad57e40033379a41f45a4862ff84b9ea7f22cb8b881e9655",
+    "FYP-project/pages/login_signup_page.py": "9207449b9922bb71787ec2b1dfb84f1f1a471f315d10a6b05ed2ce208802e6b1",
+    "FYP-project/pages/main_page.py": "681d9bcc965f460b65a3fd3b4413c9fbbd69dd759ae2b62dd907e2efa020411c",
+    "FYP-project/pages/survey_generator_ai_page.py": "ad92f42274d2a417790df341d40cd354d52f2e27055239a461b4c71b86e675e3",
+    "FYP-project/pages/survey_generator_main_page.py": "f284ca037920f7778e8ef58099112b913d8f42e9a4515e2bf251949492e2c693",
+    "FYP-project/pages/survey_generator_upload_page.py": "3dc646d90fbf1a5a025dddf782a9ba7c9e86acac20e965a46a005f422dd4bc7d",
+    "FYP-project/pages/survey_visualisation_page.py": "b0cc93bd201b5d4cae5f8024ac4a8e6eec143f2aff8dc8afc418b2c3e38f4334"
+  },
+  "source": "FYP-project (algorithm files copied verbatim by sync.py)"
+}

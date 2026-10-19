@@ -1,0 +1,8 @@
+{
+  "conversation_title": "Introduction to marketing",
+  "chatbot_context": "MKT-DEMO: introductory marketing (the marketing mix, segmentation/targeting/positioning, consumer behaviour, branding, promotion)",
+  "display_name": "marketing",
+  "brand": "MKT",
+  "sample_questions": ["What are the 4Ps of marketing?", "Explain the STP process", "What's the difference between brand identity and brand image?"],
+  "placeholder_hint": "E.g. What's the difference between brand equity and brand awareness?"
+}

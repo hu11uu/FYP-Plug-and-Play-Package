@@ -1,0 +1,8 @@
+{
+  "conversation_title": "Statistics practice",
+  "chatbot_context": "STAT-DEMO: introductory statistics",
+  "display_name": "statistics",
+  "brand": "STAT",
+  "sample_questions": ["Compare mean and median", "Explain conditional probability", "Help with variance"],
+  "placeholder_hint": "E.g. Why do outliers affect the mean?"
+}
