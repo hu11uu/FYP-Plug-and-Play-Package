@@ -5,8 +5,8 @@ Multi-Tiered Survey-Triggering System for a Conversational Feedback
 Chatbot*. It runs the project's survey-triggering algorithm, unchanged,
 behind a small shared core, so another chatbot only needs a thin adapter.
 It includes three subjects (statistics, software engineering and
-marketing), adapters for Gradio, Telegram and Moodle, and a local browser
-host for testing.
+marketing), adapters for Gradio, Telegram, Moodle and Streamlit, and a local
+browser host for testing.
 
 The original Streamlit chatbot's code (the features described in Chapters
 3 to 5 of the report) is in `vendor/FYP-project/`, copied unchanged. It can
@@ -34,6 +34,7 @@ copy the files in and update the hashes, then run the tests again.
 | `vendor/FYP-project/` | The original project's code, unchanged |
 | `tests/` | 38 automated tests |
 | `quickstart.py` | A short example of using the package from your own code |
+| `show_feedback.py` | Prints the survey answers saved for a subject |
 | `sync.py` | Copies the algorithm files from the project and updates the hashes |
 | `measure_latency.py` | Measures reply time with concurrent model calls on and off |
 
@@ -45,12 +46,19 @@ copy the files in and update the hashes, then run the tests again.
 | `hosts/gradio_host.py` | Gradio | Gradio chat callback |
 | `hosts/telegram_host.py` | Telegram | Long polling through `python-telegram-bot` |
 | `hosts/moodle_host.py` | Moodle | An OpenAI-compatible endpoint that `block_ai_chat` calls through `local_ai_manager` |
+| `hosts/streamlit_host.py` | Streamlit | A separate Streamlit process that calls `hosts/http_server.py` over local HTTP |
 
 The hosts contain no survey logic. Each one passes messages to
 `bot.chat()` and survey ratings to `bot.submit_survey()`, then shows what
 comes back. Gradio, Telegram and Moodle have no built-in survey form, so a
 survey is shown as a text message and the learner replies with numbers
-from 1 to 5.
+from 1 to 5. The Streamlit host shows the survey as a form, and the scenario
+options and follow-up suggestions as buttons.
+
+Streamlit cannot import the package directly, because `bridge.py` puts a
+stand-in in place of the `streamlit` module so the original algorithm can
+run outside Streamlit. The Streamlit host therefore runs as its own process
+and talks to the package's local server.
 
 ## Run it
 
@@ -74,6 +82,11 @@ python3 hosts/telegram_host.py --deployment software_engineering
 cp moodle.env.example moodle.env       # set your own shared key
 python3 hosts/moodle_host.py --deployment marketing --port 8767
 ngrok http 8767                        # local_ai_manager accepts only https:// endpoints
+
+# Streamlit (two terminals)
+pip install streamlit
+python3 hosts/http_server.py --deployment statistics   # terminal 1: the package
+streamlit run hosts/streamlit_host.py                  # terminal 2: the chat page
 ```
 
 For live answers from Azure OpenAI, copy `azure.env.example` to
@@ -81,6 +94,19 @@ For live answers from Azure OpenAI, copy `azure.env.example` to
 `hosts/http_server.py` reads the same four variables from the environment
 instead. Appendix A of the report has the full setup steps, including the
 Moodle connector settings.
+
+## See the feedback
+
+Each subject saves its surveys in `runtime/<subject>.sqlite` (excluded from
+git). To read them:
+
+```sh
+python3 show_feedback.py statistics
+```
+
+It prints each saved survey, newest first, with the questions, the 1-5
+answers, the time and the question the learner had just asked, plus the
+average rating.
 
 ## Use it from your own code, or add a platform
 
