@@ -1,5 +1,7 @@
 # Survey-triggering algorithm: plug-and-play package
 
+**Video walkthrough:** [Setup on Gradio, Telegram and Streamlit](https://youtu.be/AOgoGiXkmM4)
+
 This package comes from the NTU Final Year Project *An Intelligent,
 Multi-Tiered Survey-Triggering System for a Conversational Feedback
 Chatbot*. It runs the project's survey-triggering algorithm, unchanged,
